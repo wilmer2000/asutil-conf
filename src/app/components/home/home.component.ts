@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from '../header/header.component';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'app-base',
+  selector: 'app-home',
   imports: [
-    RouterOutlet,
     HeaderComponent,
+    RouterOutlet,
   ],
-  templateUrl: './base.component.html',
+  templateUrl: './home.component.html',
   styles: ``
 })
-export class BaseComponent {
+export class HomeComponent {
 
 }
