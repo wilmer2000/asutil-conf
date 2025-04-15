@@ -1,9 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 @import "tailwindcss";
 
-@theme {
-  --default-font-family: "Figtree", "sans-serif";
+@layer base {
+  :root {
+    --default-font-family: "Figtree", "sans-serif";
+    --bunker: #171717;
+    --primary: #3b1f55;
+    --primarytext: #212121;
+    --lightprimary: #6a4a8a;
+    --darkprimary: #2a153d;
+    --secondary: #c7328f;
+    --darksecondary: #a52876;
+    --secondarytext: #757575;
+    --disabled: #d0d0d0;
+    --accent: #e83a9c;
+    --woodsmoke: #101010;
+  }
 }
 
+body {
+  background-color: var(--woodsmoke);
+  color: #FFFFFF;
+}
 
+body, p, h1, h2, h3, h4, h5, h6, span, a, li, dt, dd, th, td {
+}
