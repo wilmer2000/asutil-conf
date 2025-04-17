@@ -17,13 +17,26 @@
     --disabled: #d0d0d0;
     --accent: #e83a9c;
     --woodsmoke: #101010;
+    --btn-height: 40px;
+    --btn-min-width: 40px;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply text-white p-2 flex justify-center items-center rounded-md text-center;
+    background: var(--primarytext);
+    height: var(--btn-height);
+    line-height: var(--btn-height);
+    min-width: var(--btn-min-width);
+
+    > * {
+      display: block;
+    }
   }
 }
 
 body {
-  background-color: var(--woodsmoke);
+  background: var(--woodsmoke);
   color: #FFFFFF;
-}
-
-body, p, h1, h2, h3, h4, h5, h6, span, a, li, dt, dd, th, td {
 }
