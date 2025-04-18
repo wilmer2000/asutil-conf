@@ -1,4 +1,4 @@
-<a (click)="onClick()" class="btn">
+<a (click)="onClick()" [ngClass]="theme() === 'primary' ? 'btn-primary' : ''" class="btn">
   @if (icon()) {
     <img [alt]="icon()" class="inline-block" [height]="20" [ngSrc]="`/img/icons/${icon()}.svg`" [width]="11">
   }

@@ -1,10 +1,11 @@
 import { Component, input, output } from '@angular/core';
-import { NgOptimizedImage } from '@angular/common';
+import { NgClass, NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-button',
   imports: [
     NgOptimizedImage,
+    NgClass,
   ],
   templateUrl: './button.component.html',
   styles: `
@@ -16,6 +17,7 @@ import { NgOptimizedImage } from '@angular/common';
 export class ButtonComponent {
   label = input<string>();
   icon = input<string>();
+  theme = input<'default' | 'primary'>('default');
   click = output<void>();
 
   onClick(): void {

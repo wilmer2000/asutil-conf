@@ -7,7 +7,7 @@ export interface IMenuItem {
   icon: TIcon;
   title: string;
   bgUrl: string;
-  link: string;
+  url: string;
 }
 
 type TIcon = 'briefcase' |
@@ -59,8 +59,8 @@ export class MenuItemComponent {
 
   private readonly router: Router = inject(Router);
 
-  onClick(link: string): void {
-    this.router.navigateByUrl(link).then();
+  onClick(url: string): void {
+    this.router.navigateByUrl(url).then();
   }
 }
 

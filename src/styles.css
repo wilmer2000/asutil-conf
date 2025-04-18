@@ -29,6 +29,10 @@
     height: var(--btn-size);
     line-height: var(--btn-size);
     min-width: var(--btn-min-width);
+
+    &.btn-primary {
+      background: var(--darksecondary);
+    }
   }
 
   .input-control {
