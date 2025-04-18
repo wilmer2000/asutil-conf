@@ -1,6 +1,11 @@
 {
   "$schema": "./node_modules/@angular/service-worker/config/schema.json",
   "index": "/index.html",
+  "navigationUrls": [
+    "!/**/*.{js,css,png,jpg,gif,svg,webp,avif,woff,woff2,ttf,otf}",
+    "!/assets/**",
+    "/**"
+  ],
   "assetGroups": [
     {
       "name": "app",
@@ -8,7 +13,6 @@
       "resources": {
         "files": [
           "/favicon.ico",
-          "/index.csr.html",
           "/index.html",
           "/manifest.webmanifest",
           "/*.css",
@@ -26,5 +30,9 @@
         ]
       }
     }
-  ]
+  ],
+  "navigationRequestStrategy": "freshness",
+  "applicationMaxAge": "",
+  "dataGroups": [],
+  "appData": {}
 }

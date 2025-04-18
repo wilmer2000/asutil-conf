@@ -17,6 +17,9 @@ export const routes: Routes = [
     component: HomeComponent,
     children: [
       {
+        path: '', redirectTo: 'start', pathMatch: 'full',
+      },
+      {
         path: 'start',
         component: StartComponent,
       },
