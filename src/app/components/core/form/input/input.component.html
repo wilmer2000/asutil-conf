@@ -1,0 +1,22 @@
+@let formGroup = form();
+
+@if (formGroup) {
+  <div class="block" [formGroup]="formGroup">
+    @if (label()) {
+      <label>{{ label() }}</label>
+    }
+    @switch (type()) {
+      @case ('text') {
+        <input type="text" class="input" />
+      }
+      @case ('email') {
+        <input type="email" class="input" />
+      }
+      @case ('password') {
+        <input type="password" class="input" />
+      }
+    }
+  </div>
+
+}
+

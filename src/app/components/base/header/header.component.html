@@ -1,10 +1,16 @@
 <header class="flex w-full justify-between p-6 bg-[var(--woodsmoke)]">
-  <div>
-    <a [routerLink]="'/home'">
-      <img alt="" height="40" ngSrc="/img/nexus-logo.svg" priority width="42.92">
-    </a>
-  </div>
-  <div>
-    <app-button></app-button>
-  </div>
+  @if (!onlyLogo) {
+    <div>
+      <a [routerLink]="'/home'">
+        <img alt="nexus-logo" [height]="40" [ngSrc]="'/img/nexus-logo.svg'" [width]="42.92" class="h-[40px]">
+      </a>
+    </div>
+    <div>
+      <app-button></app-button>
+    </div>
+  } @else {
+    <div>
+      <img alt="nexus-logo" [height]="40" [ngSrc]="'/img/nexus-logo.svg'" [width]="42.92" class="h-[40px]">
+    </div>
+  }
 </header>

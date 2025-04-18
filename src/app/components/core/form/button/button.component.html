@@ -1,3 +1,8 @@
 <a (click)="onClick()" class="btn">
-  <img alt="chevron" class="me-[3px]" height="20" ngSrc="/img/icons/chevron.svg" width="11">
+  @if (icon()) {
+    <img [alt]="icon()" class="me-[3px]" [height]="20" [ngSrc]="`/img/icons/${icon()}.svg`" [width]="11">
+  }
+  @if (label()) {
+    {{ label() }}
+  }
 </a>

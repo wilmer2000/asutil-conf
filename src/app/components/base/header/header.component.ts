@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { NgOptimizedImage } from '@angular/common';
 import { ButtonComponent } from '../../core/form/button/button.component';
@@ -14,5 +14,5 @@ import { ButtonComponent } from '../../core/form/button/button.component';
   styles: ``
 })
 export class HeaderComponent {
-
+  @Input() onlyLogo = false;
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input, output } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
 
 @Component({
@@ -14,9 +14,12 @@ import { NgOptimizedImage } from '@angular/common';
   `,
 })
 export class ButtonComponent {
+  label = input<string>();
+  icon = input<string>();
+  click = output<void>();
 
   onClick(): void {
-    console.log('Button clicked');
+    this.click.emit();
   }
 
 }
