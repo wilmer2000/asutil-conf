@@ -1,6 +1,6 @@
 <a (click)="onClick()" class="btn">
   @if (icon()) {
-    <img [alt]="icon()" class="me-[3px]" [height]="20" [ngSrc]="`/img/icons/${icon()}.svg`" [width]="11">
+    <img [alt]="icon()" class="inline-block" [height]="20" [ngSrc]="`/img/icons/${icon()}.svg`" [width]="11">
   }
   @if (label()) {
     {{ label() }}

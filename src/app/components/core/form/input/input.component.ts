@@ -14,5 +14,6 @@ type TInputType = 'text' | 'email' | 'password';
 export class InputComponent {
   form = input<FormGroup>();
   label = input<string>();
+  id = input<string>();
   type = input<TInputType>('text');
 }

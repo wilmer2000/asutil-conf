@@ -13,6 +13,19 @@ export const routes: Routes = [
     component: LoginComponent,
   },
   {
+    path: 'password',
+    component: LoginComponent,
+    children: [
+      {
+        path: '', redirectTo: 'recover', pathMatch: 'full',
+      },
+      {
+        path: 'recover',
+        component: StartComponent,
+      },
+    ],
+  },
+  {
     path: 'home',
     component: HomeComponent,
     children: [

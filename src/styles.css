@@ -17,21 +17,34 @@
     --disabled: #d0d0d0;
     --accent: #e83a9c;
     --woodsmoke: #101010;
-    --btn-size: 40px;
-    --btn-min-width: 40px;
+    --btn-size: 50px;
+    --btn-min-width: var(--btn-size);
   }
 }
 
 @layer components {
   .btn {
-    @apply text-white p-2 flex justify-center items-center rounded-md text-center;
+    @apply text-white p-2 flex justify-center items-center rounded-2xl text-center;
     background: var(--primarytext);
     height: var(--btn-size);
     line-height: var(--btn-size);
     min-width: var(--btn-min-width);
+  }
 
-    > * {
-      display: block;
+  .input-control {
+    label {
+      @apply block text-white mb-2 ms-2;
+    }
+
+    > input {
+      @apply text-white py-4 px-3.5 flex justify-center items-center rounded-2xl border-2 border-(--primarytext) w-full;
+      background: var(--bunker);
+      height: var(--btn-size);
+      line-height: var(--btn-size);
+
+      &:focus {
+        @apply outline-none border-2 border-(--darksecondary);
+      }
     }
   }
 

@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
-import { FormComponent } from './form/form.component';
+import { LoginFormComponent } from './login-form/login-form.component';
 
 @Component({
   selector: 'app-login',
   imports: [
     HeaderComponent,
-    FormComponent,
+    LoginFormComponent,
   ],
   templateUrl: './login.component.html',
   styles: `

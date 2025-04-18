@@ -1,0 +1,6 @@
+<div [formGroup]="form" class="flex flex-col gap-4">
+  <app-input [form]="form" [id]="'email'" [label]="'Email'" />
+  <app-input [form]="form" [id]="'password'" [label]="'Password'" />
+  <app-button (click)="login()" [label]="'Login'" />
+  <p class="text-center">Forgot password? <a [routerLink]="'/password'"><b>Click here</b></a></p>
+</div>

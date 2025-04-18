@@ -1,22 +1,22 @@
 @let formGroup = form();
+@let idControl = id();
 
-@if (formGroup) {
-  <div class="block" [formGroup]="formGroup">
+@if (formGroup && idControl) {
+  <div class="input-control" [formGroup]="formGroup">
     @if (label()) {
-      <label>{{ label() }}</label>
+      <label [for]="id()">{{ label() }}</label>
     }
     @switch (type()) {
       @case ('text') {
-        <input type="text" class="input" />
+        <input type="text" [formControlName]="idControl" />
       }
       @case ('email') {
-        <input type="email" class="input" />
+        <input type="email" [formControlName]="idControl" />
       }
       @case ('password') {
-        <input type="password" class="input" />
+        <input type="password" [formControlName]="idControl" />
       }
     }
   </div>
-
 }
 
