@@ -1,0 +1,12 @@
+<div
+  (click)="onClick(item.link)"
+  [ngClass]="item.theme"
+  [ngStyle]="{'background-image': 'url(' + item.bgUrl + ')'}"
+  class="flex flex-col justify-between h-full w-full relative rounded-3xl p-3 min-h-[132px] bg-cover bg-blend-color-dodge">
+  <div class="icon">
+    <div class="relative w-[20px] h-[20px]">
+      <img [alt]="item.icon" [ngSrc]="`/img/icons/${item.icon}.svg`" fill>
+    </div>
+  </div>
+  <h5 class="text-2xl m-0 p-0">{{ item.title }}</h5>
+</div>

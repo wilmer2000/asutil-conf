@@ -17,7 +17,7 @@
     --disabled: #d0d0d0;
     --accent: #e83a9c;
     --woodsmoke: #101010;
-    --btn-height: 40px;
+    --btn-size: 40px;
     --btn-min-width: 40px;
   }
 }
@@ -26,13 +26,23 @@
   .btn {
     @apply text-white p-2 flex justify-center items-center rounded-md text-center;
     background: var(--primarytext);
-    height: var(--btn-height);
-    line-height: var(--btn-height);
+    height: var(--btn-size);
+    line-height: var(--btn-size);
     min-width: var(--btn-min-width);
 
     > * {
       display: block;
     }
+  }
+
+  .title-primary {
+    @apply block text-4xl mb-5;
+  }
+
+  .icon {
+    @apply text-white p-2 flex justify-center items-center rounded-2xl text-center;
+    height: var(--btn-size);
+    width: var(--btn-size);
   }
 }
 

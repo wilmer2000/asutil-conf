@@ -10,8 +10,6 @@ import { NgOptimizedImage } from '@angular/common';
   styles: `
     :host {
       display: block;
-      margin: 0;
-      padding: 0;
     }
   `,
 })
