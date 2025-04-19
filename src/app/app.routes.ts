@@ -36,6 +36,10 @@ export const routes: Routes = [
         path: 'start',
         component: StartComponent,
       },
+      {
+        path: 'speakers',
+        component: StartComponent,
+      },
     ],
   },
   {

@@ -17,8 +17,10 @@
     --disabled: #d0d0d0;
     --accent: #e83a9c;
     --woodsmoke: #101010;
-    --btn-size: 50px;
+    --btn-size: 40px;
     --btn-min-width: var(--btn-size);
+    --header-size: 72px;
+    --header-gradiant-size: 10px;
   }
 }
 
@@ -37,7 +39,7 @@
 
   .input-control {
     label {
-      @apply block text-white mb-2 ms-2;
+      @apply block text-white mb-1 ms-2 leading-none;
     }
 
     > input {

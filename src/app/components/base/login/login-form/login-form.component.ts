@@ -26,5 +26,7 @@ export class LoginFormComponent {
       this.form.markAllAsTouched();
       return;
     }
+    const { email, password } = this.form.value;
+    
   }
 }

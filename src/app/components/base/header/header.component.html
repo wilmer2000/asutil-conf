@@ -1,4 +1,4 @@
-<header class="flex w-full justify-between p-6 bg-[var(--woodsmoke)]">
+<header class="flex w-full justify-between px-6 py-4 bg-[var(--woodsmoke)] relative">
   @if (!onlyLogo) {
     <div>
       <a [routerLink]="'/home'">
@@ -6,7 +6,7 @@
       </a>
     </div>
     <div>
-      <app-button></app-button>
+      <app-button [icon]="'chevron'"></app-button>
     </div>
   } @else {
     <div>
